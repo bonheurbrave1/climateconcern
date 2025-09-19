@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Concern - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="./images/climateconcernlogo.jpeg"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c9c5b;
+            --secondary-color: #1d7040;
+            --dark-color: #1a3b27;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-weight: lighter;
+        }
+        
+        .navbar-brand {
+            font-weight: 500;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+        }
+        
+        .contact-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            background-color: var(--primary-color);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(44, 156, 91, 0.25);
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .office-card {
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-dark bg-primary sticky-top" style="font-weight: lighter;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/climateconcernlogo.jpeg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                    Climate Concern
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                                About Climate Concern
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="PPDdevelopment.html">PPD development</a></li>
+                                <li><a class="dropdown-item" href="localstakeholder.html">Local Stakeholder Consultation</a></li>
+                                <li><a class="dropdown-item" href="independentlocal.html">Independent Local Auditor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown">
+                                Policy Advisory
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="policyreview.html">Policy Review</a></li>
+                                <li><a class="dropdown-item" href="developmentnationalteam.html">Development of National Scheme</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Carbon Market Project Development</a></li>
+                                <li><a class="dropdown-item" href="#">Carbon Market Project Verification</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown">
+                                Who we are
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="board.html">Board</a></li>
+                                <li><a class="dropdown-item" href="termsandconditions.html">Terms and Conditions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <a href="#consultation" class="btn btn-light ms-lg-4">Consultation</a>
+                </div>
+            </div>
+        </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Contact Climate Concern</h1>
+            <p class="lead mb-4">Get in touch with us to discuss how we can support your climate action initiatives</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Get In Touch</h2>
+                    <p class="text-muted">Multiple ways to connect with our team</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card contact-card text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4 class="card-title">Visit Us</h4>
+                            <p class="card-text">KG 123 St<br>Kigali, Rwanda</p>
+                            <a href="#location" class="btn btn-outline-primary btn-sm">View on Map</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card contact-card text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4 class="card-title">Call Us</h4>
+                            <p class="card-text">+250 788 123 456<br>+250 789 987 654</p>
+                            <a href="tel:+250788123456" class="btn btn-outline-primary btn-sm">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card contact-card text-center h-100">
+                        <div class="card-body p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4 class="card-title">Email Us</h4>
+                            <p class="card-text">info@climateconcern.rw<br>support@climateconcern.rw</p>
+                            <a href="mailto:info@climateconcern.rw" class="btn btn-outline-primary btn-sm">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="organization" class="form-label">Organization</label>
+                            <input type="text" class="form-control" id="organization">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select class="form-select" id="subject" required>
+                                <option value="" selected disabled>Select a subject</option>
+                                <option>General Inquiry</option>
+                                <option>Project Development</option>
+                                <option>Stakeholder Consultation</option>
+                                <option>Policy Advisory</option>
+                                <option>Carbon Market Services</option>
+                                <option>Partnership Opportunity</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h2 class="section-title">Office Hours</h2>
+                    
+                    <div class="office-card">
+                        <h5><i class="fas fa-building text-primary me-2"></i> Main Office</h5>
+                        <p class="mb-1">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        <p class="mb-1">Saturday: 9:00 AM - 1:00 PM</p>
+                        <p class="mb-0">Sunday: Closed</p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <h5><i class="fas fa-calendar-alt text-primary me-2"></i> Holiday Schedule</h5>
+                        <p>Our office is closed on national holidays. Emergency climate advisory services remain available 24/7 for urgent matters.</p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <h5><i class="fas fa-clock text-primary me-2"></i> Response Time</h5>
+                        <p class="mb-1">We strive to respond to all inquiries within 24-48 hours during business days.</p>
+                        <p class="mb-0">For urgent matters, please call our emergency hotline: +250 788 555 123</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="d-flex">
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Contact Our Team</h2>
+                    <p class="text-muted">Reach out to specific departments or team members</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Project Development</h4>
+                            <p class="card-text">For inquiries about our PPD services and climate project development</p>
+                            <p class="text-primary mb-1">projects@climateconcern.rw</p>
+                            <p class="mb-0">+250 788 123 400</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Stakeholder Consultation</h4>
+                            <p class="card-text">For community engagement and stakeholder consultation services</p>
+                            <p class="text-primary mb-1">stakeholders@climateconcern.rw</p>
+                            <p class="mb-0">+250 788 123 401</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Policy Advisory</h4>
+                            <p class="card-text">For policy review and development of national climate schemes</p>
+                            <p class="text-primary mb-1">policy@climateconcern.rw</p>
+                            <p class="mb-0">+250 788 123 402</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Carbon Market Services</h4>
+                            <p class="card-text">For carbon market project development and verification</p>
+                            <p class="text-primary mb-1">carbon@climateconcern.rw</p>
+                            <p class="mb-0">+250 788 123 403</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">General Inquiries</h4>
+                            <p class="card-text">For general questions about our services and organization</p>
+                            <p class="text-primary mb-1">info@climateconcern.rw</p>
+                            <p class="mb-0">+250 788 123 404</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Partnerships</h4>
+                            <p class="card-text">For organizations interested in partnering with us</p>
+                            <p class="text-primary mb-1">partnerships@climateconcern.rw</p>
+                            <p class="mb-0">+250 788 123 405</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="location" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Location</h2>
+                    <p class="text-muted">Visit our office in Kigali, Rwanda</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.39466955258!2d30.059614471508027!3d-1.9443574334057106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf52b36cefafa7c44!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2sus!4v1689877733058!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5><i class="fas fa-directions text-primary me-2"></i> Directions</h5>
+                            <p class="mb-0">Our office is located in the heart of Kigali, easily accessible from all major roads. Ample parking is available on site.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5><i class="fas fa-bus text-primary me-2"></i> Public Transport</h5>
+                            <p class="mb-0">Several bus routes stop within walking distance of our office. The closest bus stop is just 200m away.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5><i class="fas fa-car text-primary me-2"></i> Parking</h5>
+                            <p class="mb-0">We have dedicated parking spaces for visitors. Please inform us in advance if you're driving to our office.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Frequently Asked Questions</h2>
+                    <p class="text-muted">Quick answers to common questions</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How quickly will I receive a response to my inquiry?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We strive to respond to all inquiries within 24-48 hours during business days. For urgent matters, please call our main office number.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do I need to schedule an appointment to visit your office?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    While walk-ins are welcome, we recommend scheduling an appointment to ensure the appropriate team member is available to assist you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What information should I include in my project inquiry?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Please include your organization name, project type, location, estimated timeline, and any specific challenges or goals you have.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="faqAccordion2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do you offer virtual consultation services?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    Yes, we offer comprehensive virtual consultation services via video conference, phone, and email to accommodate clients worldwide.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    What are your payment terms?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    Payment terms vary by project size and scope. We typically require a deposit to begin work, with the balance due upon project completion.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Do you work with international clients?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    Yes, we work with clients across East Africa and internationally. Our team has experience with diverse regulatory environments and cultural contexts.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">Climate Concern</h4>
+                    <p>Leading Rwanda's climate action through innovative solutions in carbon market development, policy advisory, and capacity building.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4">Contact Info</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> KG 123 St, Kigali, Rwanda</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i> +250 788 123 456</p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i> info@climateconcern.rw</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-x-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Climate Concern. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

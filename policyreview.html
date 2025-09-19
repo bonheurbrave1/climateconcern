@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Review - Climate Concern</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="./images/climateconcernlogo.jpeg"> 
+    
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+        }
+
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .process-step {
+            border-left: 3px solid var(--primary-color);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin-left: -30px;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        .bg-light-green {
+            background-color: rgba(44, 156, 91, 0.1);
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-icon {
+            background-color: var(--primary-color);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+
+        .certification-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            margin: 5px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" style="font-weight: lighter;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/climateconcernlogo.jpeg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                Climate Concern
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About Climate Concern
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PPDdevelopment.html">PPD development</a></li>
+                            <li><a class="dropdown-item" href="localstakeholder.html">Local Stakeholder Consultation</a></li>
+                            <li><a class="dropdown-item" href="independentlocal.html">Independent Local Auditor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown">
+                            Policy Advisory
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="policyreview.html">Policy Review</a></li>
+                            <li><a class="dropdown-item" href="developmentnationalteam.html">Development of National Scheme</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Development</a></li>
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Verification</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown">
+                            Who we are
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="board.html">Board</a></li>
+                            <li><a class="dropdown-item" href="termsandconditions.html">Terms and Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact us</a>
+                    </li>
+                </ul>
+                <a href="#consultation" class="btn btn-light ms-lg-4">Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Policy Review Services</h1>
+            <p class="lead mb-4">Expert analysis and assessment of climate policies for effective implementation</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Policy Review Approach</h2>
+                    <p>Climate Concern provides comprehensive policy review services to assess the effectiveness,
+                        feasibility, and alignment of climate policies with national and international objectives.
+                        Our expert team analyzes existing policies and provides actionable recommendations for improvement.</p>
+                    <p>As Rwanda's leading climate policy advisory firm, we ensure that policies are evidence-based,
+                        stakeholder-inclusive, and designed for successful implementation across all sectors.</p>
+                    <div class="mt-4">
+                        <a href="#policy-request" class="btn btn-primary me-2">Request Policy Review</a>
+                        <a href="#process" class="btn btn-outline-primary">Our Review Process</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                        alt="Policy Review Services" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section class="py-5 bg-light-green">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Why Policy Review Matters</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Evidence-Based Analysis</h4>
+                        <p>Comprehensive assessment using data, research, and stakeholder feedback to evaluate policy effectiveness.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Implementation Feasibility</h4>
+                        <p>Assessment of resource requirements, institutional capacity, and practical challenges for policy implementation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>International Alignment</h4>
+                        <p>Ensure policies align with global climate commitments, NDCs, and international best practices.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Impact Optimization</h4>
+                        <p>Identify opportunities to enhance policy impact, effectiveness, and stakeholder benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Policy Review Services</h2>
+                    <p class="text-muted">Comprehensive policy analysis and assessment services</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-file-alt fa-3x"></i>
+                            </div>
+                            <h4 class="card-title">Climate Policy Assessment</h4>
+                            <p class="card-text">Comprehensive review of national and sectoral climate policies, their effectiveness, and alignment with climate goals.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-handshake fa-3x"></i>
+                            </div>
+                            <h4 class="card-title">NDC Implementation Review</h4>
+                            <p class="card-text">Assessment of Nationally Determined Contributions implementation progress and policy alignment.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-industry fa-3x"></i>
+                            </div>
+                            <h4 class="card-title">Sectoral Policy Review</h4>
+                            <p class="card-text">Specialized review of sector-specific policies including energy, agriculture, transport, and forestry.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-balance-scale fa-3x"></i>
+                            </div>
+                            <h4 class="card-title">Regulatory Framework Analysis</h4>
+                            <p class="card-text">Review of legal and regulatory frameworks supporting climate policy implementation and enforcement.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-users-cog fa-3x"></i>
+                            </div>
+                            <h4 class="card-title">Stakeholder Impact Assessment</h4>
+                            <p class="card-text">Analysis of policy impacts on different stakeholder groups and communities affected by climate policies.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-chart-line fa-3x"></i>
+                            </div>
+                            <h4 class="card-title">Policy Gap Analysis</h4>
+                            <p class="card-text">Identification of policy gaps, inconsistencies, and areas requiring new or revised policy interventions.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Policy Review Process</h2>
+                    <p class="text-muted">A systematic approach to comprehensive policy analysis</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Scoping & Objectives</h4>
+                        <p>Define review scope, objectives, and methodology in consultation with stakeholders to ensure comprehensive coverage.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Document Analysis</h4>
+                        <p>Systematic review of policy documents, implementation reports, legal frameworks, and supporting materials.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Stakeholder Consultation</h4>
+                        <p>Engage with government agencies, civil society, private sector, and communities to gather diverse perspectives.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Data Collection & Analysis</h4>
+                        <p>Gather implementation data, monitor indicators, and analyze policy performance against stated objectives.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h4>Assessment & Evaluation</h4>
+                        <p>Evaluate policy effectiveness, efficiency, relevance, and sustainability using established criteria and frameworks.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <h4>Recommendations & Reporting</h4>
+                        <p>Develop actionable recommendations and comprehensive report with findings, conclusions, and implementation roadmap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Areas Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Policy Review Focus Areas</h2>
+                    <p class="text-muted">Key areas we assess in our comprehensive policy reviews</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Climate Mitigation Policies</h4>
+                            <div class="d-flex flex-wrap">
+                                <span class="certification-badge"><i class="fas fa-leaf text-primary me-2"></i>
+                                    Renewable Energy Policy</span>
+                                <span class="certification-badge"><i class="fas fa-leaf text-primary me-2"></i>
+                                    Energy Efficiency Standards</span>
+                                <span class="certification-badge"><i class="fas fa-leaf text-primary me-2"></i>
+                                    Carbon Pricing Mechanisms</span>
+                                <span class="certification-badge"><i class="fas fa-leaf text-primary me-2"></i>
+                                    Transport Sector Policies</span>
+                                <span class="certification-badge"><i class="fas fa-leaf text-primary me-2"></i>
+                                    Industrial Emission Controls</span>
+                                <span class="certification-badge"><i class="fas fa-leaf text-primary me-2"></i>
+                                    Waste Management Policies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Climate Adaptation Policies</h4>
+                            <div class="d-flex flex-wrap">
+                                <span class="certification-badge"><i class="fas fa-shield-alt text-primary me-2"></i>
+                                    Climate Resilience Strategies</span>
+                                <span class="certification-badge"><i class="fas fa-shield-alt text-primary me-2"></i>
+                                    Disaster Risk Reduction</span>
+                                <span class="certification-badge"><i class="fas fa-shield-alt text-primary me-2"></i>
+                                    Agricultural Adaptation</span>
+                                <span class="certification-badge"><i class="fas fa-shield-alt text-primary me-2"></i>
+                                    Water Resources Management</span>
+                                <span class="certification-badge"><i class="fas fa-shield-alt text-primary me-2"></i>
+                                    Infrastructure Resilience</span>
+                                <span class="certification-badge"><i class="fas fa-shield-alt text-primary me-2"></i>
+                                    Ecosystem-based Adaptation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Request Section -->
+    <section id="policy-request" class="py-5 bg-light-green">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Request Policy Review Services</h2>
+                    <p class="lead mb-4">Contact us to discuss your policy review needs and request a detailed proposal</p>
+
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="organization" class="form-label">Organization/Institution *</label>
+                                    <input type="text" class="form-control" id="organization" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="policy-area" class="form-label">Policy Area of Interest *</label>
+                                    <select class="form-select" id="policy-area" required>
+                                        <option value="" selected disabled>Select policy area</option>
+                                        <option>Climate Mitigation</option>
+                                        <option>Climate Adaptation</option>
+                                        <option>Energy Policy</option>
+                                        <option>Agriculture & Land Use</option>
+                                        <option>Transport Policy</option>
+                                        <option>Industrial Policy</option>
+                                        <option>Cross-sectoral Policy</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="review-type" class="form-label">Type of Review Needed *</label>
+                                    <select class="form-select" id="review-type" required>
+                                        <option value="" selected disabled>Select review type</option>
+                                        <option>Climate Policy Assessment</option>
+                                        <option>NDC Implementation Review</option>
+                                        <option>Sectoral Policy Review</option>
+                                        <option>Regulatory Framework Analysis</option>
+                                        <option>Stakeholder Impact Assessment</option>
+                                        <option>Policy Gap Analysis</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Policy Review Objectives & Timeline</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Please describe the specific policies you'd like reviewed, key questions you want answered, and your preferred timeline..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Request</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">ClimateConcern</h4>
+                    <p>Leading Rwanda's climate action through innovative solutions in carbon market development, policy advisory, and capacity building.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">News</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Carbon Market Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Policy Advisory</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Capacity Building</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Data Solutions</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Climate Research</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kigali, Rwanda</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +250 788 123 456</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@ClimateConcern.rw</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 ClimateConcern. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

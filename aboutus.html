@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Concern - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="./images/climateconcernlogo.jpeg"> 
+
+    <style>
+        :root {
+            --primary-color: #2c9c5b;
+            --secondary-color: #1d7040;
+            --dark-color: #1a3b27;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-weight: lighter;
+        }
+        
+        .navbar-brand {
+            font-weight: 500;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1569163139394-de44aa9a21dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: var(--primary-color);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+            width: 50%;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 70px;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 70px;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content:after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            transform: rotate(45deg);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content:after {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            transform: rotate(45deg);
+        }
+        
+        .timeline-year {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            position: absolute;
+            top: 10px;
+            font-weight: bold;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-year {
+            right: -80px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-year {
+            left: -80px;
+        }
+        
+        .expert-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .expert-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .expert-icon {
+            background-color: var(--primary-color);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width: 768px) {
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 0;
+                left: 0;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+                padding-left: 70px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-year,
+            .timeline-item:nth-child(even) .timeline-year {
+                left: -50px;
+                right: auto;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content:after,
+            .timeline-item:nth-child(even) .timeline-content:after {
+                left: -10px;
+                right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-dark bg-primary sticky-top" style="font-weight: lighter;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/climateconcernlogo.jpeg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                Climate Concern
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About Climate Concern
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PPDdevelopment.html">PPD development</a></li>
+                            <li><a class="dropdown-item" href="localstakeholder.html">Local Stakeholder Consultation</a></li>
+                            <li><a class="dropdown-item" href="independentlocal.html">Independent Local Auditor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown">
+                            Policy Advisory
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="policyreview.html">Policy Review</a></li>
+                            <li><a class="dropdown-item" href="developmentnationalteam.html">Development of National Scheme</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Development</a></li>
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Verification</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown">
+                            Who we are
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="board.html">Board</a></li>
+                            <li><a class="dropdown-item" href="termsandconditions.html">Terms and Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact us</a>
+                    </li>
+                </ul>
+                <a href="#consultation" class="btn btn-light ms-lg-4">Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">About Climate Concern</h1>
+            <p class="lead mb-4">Leading climate action in Rwanda since 2012</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2012, Climate Concern has grown to become Rwanda's leading consulting and advisory firm specializing in environment and climate change solutions. Our journey began with a simple vision: to help organizations navigate the complex landscape of climate regulations while promoting sustainable development.</p>
+                    <p>Over the years, we have built a reputation for excellence in legal and regulatory compliance, GHG emissions reduction, and climate change adaptation projects. Our team of experts works across various sectors to deliver practical, innovative solutions that address the pressing challenges of climate change.</p>
+                    <p>Today, we stand as a trusted partner to government agencies, private sector organizations, and communities across Rwanda and the East African region.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Climate Concern Team" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">11+</div>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">50+</div>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">6</div>
+                        <p>Expertise Areas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stats-card">
+                        <div class="stats-number">15+</div>
+                        <p>Team Members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Expertise</h2>
+                    <p class="text-muted">Comprehensive climate change solutions across multiple sectors</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="expert-card">
+                        <div class="expert-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4 class="text-center">Legal & Policy Expertise</h4>
+                        <p class="text-center">Navigating complex environmental regulations and developing compliant climate strategies for organizations of all sizes.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="expert-card">
+                        <div class="expert-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4 class="text-center">GHG Emissions Reduction</h4>
+                        <p class="text-center">Developing and implementing strategies to reduce greenhouse gas emissions across industrial, agricultural, and energy sectors.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="expert-card">
+                        <div class="expert-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4 class="text-center">Climate Adaptation</h4>
+                        <p class="text-center">Designing resilience strategies and adaptation projects to help communities and ecosystems cope with climate impacts.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="expert-card">
+                        <div class="expert-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="text-center">Environmental Economics</h4>
+                        <p class="text-center">Applying economic principles to environmental challenges, valuing ecosystem services, and developing sustainable business models.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="expert-card">
+                        <div class="expert-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="text-center">Conservation Strategies</h4>
+                        <p class="text-center">Developing and implementing biodiversity conservation plans that align with climate goals and community needs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="expert-card">
+                        <div class="expert-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4 class="text-center">Energy Solutions</h4>
+                        <p class="text-center">Designing renewable energy systems, improving energy efficiency, and developing sustainable energy distribution networks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Composition Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Team Composition</h2>
+                    <p class="text-muted">Multidisciplinary experts working together for climate solutions</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-user-graduate text-white"></i>
+                        </div>
+                        <div>
+                            <h5>Climate Change Experts</h5>
+                            <p class="mb-0">Specialists in climate science, mitigation, and adaptation strategies with advanced degrees and field experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-gavel text-white"></i>
+                        </div>
+                        <div>
+                            <h5>Legal & Policy Experts</h5>
+                            <p class="mb-0">Attorneys and policy specialists with deep understanding of environmental law and regulatory frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-chart-pie text-white"></i>
+                        </div>
+                        <div>
+                            <h5>Environmental Economists</h5>
+                            <p class="mb-0">Experts in valuing ecosystem services, cost-benefit analysis, and developing sustainable economic models.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-tree text-white"></i>
+                        </div>
+                        <div>
+                            <h5>Conservation Experts</h5>
+                            <p class="mb-0">Biologists, ecologists, and conservation specialists with field experience in biodiversity protection.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-venus text-white"></i>
+                        </div>
+                        <div>
+                            <h5>Gender Experts</h5>
+                            <p class="mb-0">Specialists ensuring gender mainstreaming in climate projects and promoting women's participation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-bolt text-white"></i>
+                        </div>
+                        <div>
+                            <h5>Energy Experts</h5>
+                            <p class="mb-0">Engineers and specialists in renewable energy generation, distribution, and efficiency solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Journey</h2>
+                    <p class="text-muted">Key milestones in Climate Concern's history</p>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2012</div>
+                    <div class="timeline-content">
+                        <h4>Foundation</h4>
+                        <p>Climate Concern was established with a focus on environmental consulting and climate policy advisory services.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2014</div>
+                    <div class="timeline-content">
+                        <h4>First Major Project</h4>
+                        <p>Secured our first large-scale climate adaptation project for a government agency, establishing our reputation in the sector.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2016</div>
+                    <div class="timeline-content">
+                        <h4>Team Expansion</h4>
+                        <p>Expanded our team to include specialists in environmental economics, conservation, and gender mainstreaming.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h4>Carbon Market Expertise</h4>
+                        <p>Developed specialized services for carbon market project development and verification.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h4>Regional Expansion</h4>
+                        <p>Began working on projects across East Africa, sharing our expertise beyond Rwanda's borders.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h4>National Recognition</h4>
+                        <p>Recognized as Rwanda's leading climate consulting firm with a portfolio of 50+ completed projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                                <i class="fas fa-bullseye fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Our Mission</h3>
+                            <p class="card-text">To provide innovative, practical climate solutions that help organizations reduce environmental impact, comply with regulations, and build resilience against climate change through expert advisory services and project implementation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 70px; height: 70px;">
+                                <i class="fas fa-eye fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Our Vision</h3>
+                            <p class="card-text">To be East Africa's foremost climate consultancy, driving the transition to a low-carbon, climate-resilient future where economic development and environmental sustainability go hand in hand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">ClimateConcern</h4>
+                    <p>Leading Rwanda's climate action through innovative solutions in carbon market development, policy advisory, and capacity building.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">News</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Carbon Market Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Policy Advisory</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Capacity Building</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Data Solutions</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Climate Research</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kigali, Rwanda</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +250 788 123 456</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@ClimateConcern.rw</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 ClimateConcern. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

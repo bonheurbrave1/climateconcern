@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #2c9c5b;
+    --secondary-color: #1d7040;
+    --accent-color: #34c471;
+    --dark-color: #1a3b27;
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --text-light: #6c757d;
+}
+
+body {
+    opacity: 0;
+    animation: fadeInPage 1.7s ease-in forwards;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: white;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.news-date {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.event-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.twitter-feed {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+}
+
+@keyframes fadeInPage {
+to {
+opacity: 1;
+}
+}

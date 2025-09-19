@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Concern - Terms and Conditions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="./images/climateconcernlogo.jpeg"> 
+    <style>
+        :root {
+            --primary-color: #2c9c5b;
+            --secondary-color: #1d7040;
+            --dark-color: #1a3b27;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-weight: lighter;
+        }
+        
+        .navbar-brand {
+            font-weight: 500;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: var(--dark-color);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .terms-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+        }
+        
+        .terms-section {
+            margin-bottom: 40px;
+        }
+        
+        .terms-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .terms-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .terms-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .terms-list li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .last-updated {
+            background-color: rgba(44, 156, 91, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .terms-container {
+                padding: 25px;
+            }
+            
+            .hero-section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-dark bg-primary sticky-top" style="font-weight: lighter;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/climateconcernlogo.jpeg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                Climate Concern
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About Climate Concern
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PPDdevelopment.html">PPD development</a></li>
+                            <li><a class="dropdown-item" href="localstakeholder.html">Local Stakeholder Consultation</a></li>
+                            <li><a class="dropdown-item" href="independentlocal.html">Independent Local Auditor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown">
+                            Policy Advisory
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="policyreview.html">Policy Review</a></li>
+                            <li><a class="dropdown-item" href="developmentnationalteam.html">Development of National Scheme</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Development</a></li>
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Verification</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown">
+                            Who we are
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="board.html">Board</a></li>
+                            <li><a class="dropdown-item" href="termsandconditions.html">Terms and Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact us</a>
+                    </li>
+                </ul>
+                <a href="#consultation" class="btn btn-light ms-lg-4">Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Terms and Conditions</h1>
+            <p class="lead mb-4">Please read these terms carefully before using our services</p>
+        </div>
+    </section>
+
+    <!-- Terms Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="list-group">
+                            <a href="#acceptance" class="list-group-item list-group-item-action">1. Acceptance of Terms</a>
+                            <a href="#services" class="list-group-item list-group-item-action">2. Services Description</a>
+                            <a href="#user-obligations" class="list-group-item list-group-item-action">3. User Obligations</a>
+                            <a href="#intellectual-property" class="list-group-item list-group-item-action">4. Intellectual Property</a>
+                            <a href="#confidentiality" class="list-group-item list-group-item-action">5. Confidentiality</a>
+                            <a href="#payment" class="list-group-item list-group-item-action">6. Payment Terms</a>
+                            <a href="#liability" class="list-group-item list-group-item-action">7. Liability</a>
+                            <a href="#termination" class="list-group-item list-group-item-action">8. Termination</a>
+                            <a href="#governing-law" class="list-group-item list-group-item-action">9. Governing Law</a>
+                            <a href="#changes" class="list-group-item list-group-item-action">10. Changes to Terms</a>
+                            <a href="#contact" class="list-group-item list-group-item-action">11. Contact Information</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="terms-container">
+                        <div class="last-updated">
+                            <p class="mb-0"><strong>Last Updated:</strong> September 18, 2023</p>
+                        </div>
+                        
+                        <div class="terms-section" id="acceptance">
+                            <h3>1. Acceptance of Terms</h3>
+                            <p>By accessing or using Climate Concern's services, website, or any related applications (collectively, the "Services"), you agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree to these terms, please do not use our Services.</p>
+                            <p>These Terms constitute a legally binding agreement between you and Climate Concern Ltd., a company registered in Rwanda.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="services">
+                            <h3>2. Services Description</h3>
+                            <p>Climate Concern provides climate action services including but not limited to:</p>
+                            <ul class="terms-list">
+                                <li>Carbon market development and advisory services</li>
+                                <li>Project planning and development (PPD) for climate initiatives</li>
+                                <li>Local stakeholder consultation services</li>
+                                <li>Independent local auditing for climate projects</li>
+                                <li>Policy advisory and development services</li>
+                                <li>Capacity building and training programs</li>
+                            </ul>
+                            <p>We reserve the right to modify, suspend, or discontinue any aspect of our Services at any time, including the availability of any feature, database, or content.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="user-obligations">
+                            <h3>3. User Obligations</h3>
+                            <p>When using our Services, you agree to:</p>
+                            <ul class="terms-list">
+                                <li>Provide accurate, current, and complete information about yourself as prompted by our registration forms</li>
+                                <li>Maintain and promptly update your information to keep it accurate, current, and complete</li>
+                                <li>Not use the Services for any illegal or unauthorized purpose</li>
+                                <li>Not interfere with or disrupt the Services or servers or networks connected to the Services</li>
+                                <li>Comply with all applicable local, national, and international laws and regulations</li>
+                                <li>Not reproduce, duplicate, copy, sell, trade, or resell our Services for any purpose</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="terms-section" id="intellectual-property">
+                            <h3>4. Intellectual Property</h3>
+                            <p>All content included on our website and as part of our Services, such as text, graphics, logos, images, audio clips, digital downloads, data compilations, and software, is the property of Climate Concern or its content suppliers and protected by international copyright laws.</p>
+                            <p>You may not:</p>
+                            <ul class="terms-list">
+                                <li>Modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products or services obtained from our Services</li>
+                                <li>Use any meta tags or any other "hidden text" utilizing Climate Concern's name or trademarks without our express written consent</li>
+                            </ul>
+                            <p>Any rights not expressly granted herein are reserved.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="confidentiality">
+                            <h3>5. Confidentiality</h3>
+                            <p>Both parties agree to maintain the confidentiality of any proprietary information received from the other party during the term of engagement and for a period of five years after termination.</p>
+                            <p>Confidential information includes but is not limited to:</p>
+                            <ul class="terms-list">
+                                <li>Business plans and strategies</li>
+                                <li>Financial information</li>
+                                <li>Project details and methodologies</li>
+                                <li>Technical processes and innovations</li>
+                                <li>Client lists and partner information</li>
+                            </ul>
+                            <p>This obligation shall not apply to information that is publicly available or independently developed.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="payment">
+                            <h3>6. Payment Terms</h3>
+                            <p>Fees for our Services will be specified in separate service agreements or proposals. Unless otherwise stated:</p>
+                            <ul class="terms-list">
+                                <li>Payment is due within 30 days of invoice date</li>
+                                <li>Late payments may be subject to interest charges of 1.5% per month</li>
+                                <li>All fees are exclusive of taxes, which will be added to invoices where applicable</li>
+                                <li>Custom projects may require a deposit before work begins</li>
+                            </ul>
+                            <p>We reserve the right to suspend services for accounts with overdue payments.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="liability">
+                            <h3>7. Liability</h3>
+                            <p>Climate Concern's total liability arising out of or related to these Terms or our Services, whether in contract, tort, or otherwise, shall not exceed the total fees paid by you to Climate Concern in the six months preceding the event giving rise to the claim.</p>
+                            <p>In no event shall Climate Concern be liable for any indirect, punitive, special, incidental, or consequential damages arising out of or connected with the use of our Services.</p>
+                            <p>Climate Concern makes no warranties or representations about the accuracy or completeness of the content provided through our Services or the content of any sites linked to our Services.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="termination">
+                            <h3>8. Termination</h3>
+                            <p>These Terms are effective unless and until terminated by either you or Climate Concern. You may terminate these Terms at any time by discontinuing use of our Services.</p>
+                            <p>Climate Concern may terminate or suspend your access to our Services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                            <p>Upon termination, your right to use the Services will immediately cease. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="governing-law">
+                            <h3>9. Governing Law</h3>
+                            <p>These Terms shall be governed and construed in accordance with the laws of Rwanda, without regard to its conflict of law provisions.</p>
+                            <p>Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts located in Kigali, Rwanda.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="changes">
+                            <h3>10. Changes to Terms</h3>
+                            <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect.</p>
+                            <p>What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Services after any revisions become effective, you agree to be bound by the revised terms.</p>
+                        </div>
+                        
+                        <div class="terms-section" id="contact">
+                            <h3>11. Contact Information</h3>
+                            <p>If you have any questions about these Terms, please contact us at:</p>
+                            <p>
+                                Climate Concern Ltd.<br>
+                                KG 123 St<br>
+                                Kigali, Rwanda<br>
+                                Email: legal@climateconcern.rw<br>
+                                Phone: +250 788 123 456
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">ClimateConcern</h4>
+                    <p>Leading Rwanda's climate action through innovative solutions in carbon market development, policy advisory, and capacity building.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">News</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Carbon Market Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Policy Advisory</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Capacity Building</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Data Solutions</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Climate Research</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kigali, Rwanda</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +250 788 123 456</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@ClimateConcern.rw</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 ClimateConcern. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

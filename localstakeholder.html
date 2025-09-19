@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Concern - Local Stakeholder Consultation</title>
+    <link rel="icon" href="./images/climateconcernlogo.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+:root {
+            --primary-color: #2c9c5b;
+            --secondary-color: #1d7040;
+            --accent-color: #34c471;
+            --dark-color: #1a3b27;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --text-light: #6c757d;
+        }
+        
+        body {
+            opacity: 0;
+            animation: fadeInPage 1.7s ease-in forwards;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+            color: white;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .news-date {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .event-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .twitter-feed {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0;
+            }
+        }
+
+  @keyframes fadeInPage {
+    to {
+      opacity: 1;
+    }
+  }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-weight: lighter;
+        }
+        
+        .navbar-brand {
+            font-weight: 500;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1746&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+        }
+        
+        .process-step {
+            border-left: 3px solid var(--primary-color);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin-left: -30px;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .bg-light-green {
+            background-color: rgba(44, 156, 91, 0.1);
+        }
+        
+        .stakeholder-card {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .stakeholder-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .consultation-method {
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        
+        .testimonial {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-dark bg-primary sticky-top" style="font-weight: lighter;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/climateconcernlogo.jpeg" alt="Logo" class="img-fluid" style="max-height: 40px;">
+                Climate Concern
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About Climate Concern
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PPDdevelopment.html">PPD development</a></li>
+                            <li><a class="dropdown-item" href="localstakeholder.html">Local Stakeholder Consultation</a></li>
+                            <li><a class="dropdown-item" href="independentlocal.html">Independent Local Auditor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown">
+                            Policy Advisory
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="policyreview.html">Policy Review</a></li>
+                            <li><a class="dropdown-item" href="developmentnationalteam.html">Development of National Scheme</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Development</a></li>
+                            <li><a class="dropdown-item" href="#">Carbon Market Project Verification</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown">
+                            Who we are
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="board.html">Board</a></li>
+                            <li><a class="dropdown-item" href="termsandconditions.html">Terms and Conditions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact us</a>
+                    </li>
+                </ul>
+                <a href="#consultation" class="btn btn-light ms-lg-4">Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Local Stakeholder Consultation</h1>
+            <p class="lead mb-4">Engaging communities for sustainable climate action and inclusive development</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Approach to Stakeholder Engagement</h2>
+                    <p>At Climate Concern, we believe that meaningful stakeholder consultation is the foundation of successful climate projects. Our approach ensures that local communities are not just informed but actively participate in the development process.</p>
+                    <p>We facilitate dialogue between project developers, local communities, government agencies, and other stakeholders to create solutions that are environmentally sustainable, socially inclusive, and economically viable.</p>
+                    <div class="mt-4">
+                        <a href="#consultation" class="btn btn-primary me-2">Request Consultation</a>
+                        <a href="#process" class="btn btn-outline-primary">Our Methodology</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1746&q=80" alt="Stakeholder Consultation" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section class="py-5 bg-light-green">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Why Stakeholder Consultation Matters</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-hands-helping fa-2x text-white"></i>
+                        </div>
+                        <h4>Community Ownership</h4>
+                        <p>Projects with community involvement have higher success rates and sustainability.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-lightbulb fa-2x text-white"></i>
+                        </div>
+                        <h4>Local Knowledge</h4>
+                        <p>Communities provide invaluable insights that improve project design and implementation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-shield-alt fa-2x text-white"></i>
+                        </div>
+                        <h4>Risk Mitigation</h4>
+                        <p>Early identification of potential issues prevents conflicts and delays.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-balance-scale fa-2x text-white"></i>
+                        </div>
+                        <h4>Regulatory Compliance</h4>
+                        <p>Meeting national and international standards for stakeholder engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Consultation Methodology</h2>
+                    <p class="text-muted">A structured approach to meaningful stakeholder engagement</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Stakeholder Mapping</h4>
+                        <p>We identify all relevant stakeholders, including community groups, local government, NGOs, and private sector actors, understanding their interests and influence.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Engagement Planning</h4>
+                        <p>We develop tailored engagement strategies for different stakeholder groups, determining appropriate methods, timing, and communication channels.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Information Disclosure</h4>
+                        <p>We provide clear, accessible information about proposed projects in local languages and appropriate formats to ensure informed participation.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Consultation Activities</h4>
+                        <p>We facilitate various engagement activities including community meetings, focus groups, surveys, and workshops to gather feedback and input.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h4>Feedback Integration</h4>
+                        <p>We systematically analyze stakeholder input and integrate meaningful feedback into project design and implementation plans.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <h4>Ongoing Dialogue</h4>
+                        <p>We establish mechanisms for continuous communication throughout the project lifecycle, ensuring transparency and addressing concerns as they arise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stakeholder Types Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Key Stakeholder Groups</h2>
+                    <p class="text-muted">We engage with diverse stakeholders to ensure comprehensive consultation</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card stakeholder-card">
+                        <div class="card-body text-center">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="fas fa-users fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title">Local Communities</h4>
+                            <p class="card-text">Indigenous groups, residents, community leaders, and local organizations directly affected by projects.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card stakeholder-card">
+                        <div class="card-body text-center">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="fas fa-landmark fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title">Government Entities</h4>
+                            <p class="card-text">Local, regional, and national government agencies responsible for regulation and policy implementation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card stakeholder-card">
+                        <div class="card-body text-center">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="fas fa-hand-holding-usd fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title">Private Sector</h4>
+                            <p class="card-text">Businesses, investors, and industry associations with interests in project outcomes and economic impacts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card stakeholder-card">
+                        <div class="card-body text-center">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="fas fa-hands-helping fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title">NGOs & Civil Society</h4>
+                            <p class="card-text">Environmental organizations, community groups, and advocacy organizations representing various interests.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card stakeholder-card">
+                        <div class="card-body text-center">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="fas fa-graduation-cap fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title">Academia & Experts</h4>
+                            <p class="card-text">Researchers, scientists, and technical experts who provide specialized knowledge and analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card stakeholder-card">
+                        <div class="card-body text-center">
+                            <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="fas fa-newspaper fa-2x text-white"></i>
+                            </div>
+                            <h4 class="card-title">Media</h4>
+                            <p class="card-text">Local and national media outlets that help communicate project information and maintain transparency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Methods Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Our Consultation Methods</h2>
+                    <p class="text-muted">Tailored approaches for effective stakeholder engagement</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="consultation-method">
+                        <h4><i class="fas fa-comments text-primary me-2"></i> Community Meetings</h4>
+                        <p>Public gatherings to present project information, answer questions, and collect feedback from community members.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="consultation-method">
+                        <h4><i class="fas fa-clipboard-list text-primary me-2"></i> Focus Groups</h4>
+                        <p>Structured discussions with specific stakeholder groups to explore issues in depth and gather detailed input.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="consultation-method">
+                        <h4><i class="fas fa-file-alt text-primary me-2"></i> Surveys & Questionnaires</h4>
+                        <p>Structured tools to collect quantitative and qualitative data from a wide range of stakeholders.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="consultation-method">
+                        <h4><i class="fas fa-handshake text-primary me-2"></i> One-on-One Interviews</h4>
+                        <p>Personal meetings with key stakeholders to understand specific concerns and perspectives.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="consultation-method">
+                        <h4><i class="fas fa-desktop text-primary me-2"></i> Digital Platforms</h4>
+                        <p>Online portals, social media, and virtual meetings to reach stakeholders who cannot attend in person.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="consultation-method">
+                        <h4><i class="fas fa-tree text-primary me-2"></i> Site Visits</h4>
+                        <p>Field trips to project areas to help stakeholders understand the context and potential impacts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light-green">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title d-inline-block">Success Stories</h2>
+                    <p class="text-muted">Hear from communities and partners we've worked with</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="testimonial">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Testimonial" class="testimonial-img">
+                            <div>
+                                <h5 class="mb-0">James Nkusi</h5>
+                                <p class="text-muted mb-0">Community Leader, Rwamagana District</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Climate Concern's consultation process truly listened to our community's concerns. They didn't just come with predetermined solutions but worked with us to develop approaches that respect our knowledge and needs."</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="testimonial">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80" alt="Testimonial" class="testimonial-img">
+                            <div>
+                                <h5 class="mb-0">Marie Aimee</h5>
+                                <p class="text-muted mb-0">Director, Green Future Rwanda</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The stakeholder consultation methodology used by Climate Concern sets a new standard in the industry. Their inclusive approach ensures that all voices are heard, leading to more sustainable and accepted project outcomes."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Start the Conversation</h2>
+                    <p class="lead mb-4">Contact us to discuss how our stakeholder consultation services can benefit your project</p>
+                    
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="organization" class="form-label">Organization</label>
+                                    <input type="text" class="form-control" id="organization">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="project-type" class="form-label">Project Type</label>
+                                    <select class="form-select" id="project-type">
+                                        <option selected>Select project type</option>
+                                        <option>Renewable Energy</option>
+                                        <option>Forestry & Land Use</option>
+                                        <option>Waste Management</option>
+                                        <option>Energy Efficiency</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Project Details & Consultation Needs</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Request Consultation</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">ClimateConcern</h4>
+                    <p>Leading Rwanda's climate action through innovative solutions in carbon market development, policy advisory, and capacity building.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">News</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Carbon Market Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Policy Advisory</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Capacity Building</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Data Solutions</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Climate Research</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kigali, Rwanda</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +250 788 123 456</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@ClimateConcern.rw</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 ClimateConcern. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
