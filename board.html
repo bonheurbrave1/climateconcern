@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="./images/climateconcernlogo.jpeg">
+    <link rel="stylesheet" href="nav.css">
 
     <style>
-        :root {
-            --primary-color: #2c9c5b;
-            --secondary-color: #1d7040;
-            --dark-color: #1a3b27;
-            --light-color: #f8f9fa;
-        }
-        
-        :root {
-            --primary-color: #2c9c5b;
-            --secondary-color: #1d7040;
-            --accent-color: #34c471;
-            --dark-color: #1a3b27;
-            --light-color: #f8f9fa;
-            --text-color: #333;
-            --text-light: #6c757d;
-        }
-        
         body {
             opacity: 0;
             animation: fadeInPage 1s ease-in forwards;
@@ -33,31 +18,21 @@
             color: var(--text-color);
             line-height: 1.6;
         }
-        
-        h1, h2, h3, h4, h5, h6, .navbar-brand {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-        
-        .bg-primary {
-            background-color: var(--primary-color) !important;
-            color: white;
-        }
-        
+
         .btn-primary {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
         }
-        
+
         .btn-primary:hover {
             background-color: var(--secondary-color);
             border-color: var(--secondary-color);
         }
-        
+
         .text-primary {
             color: var(--primary-color) !important;
         }
-        
+
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
             background-size: cover;
@@ -65,48 +40,46 @@
             padding: 120px 0;
             color: white;
         }
-        
-        .nav-item:hover .dropdown-menu {
-            display: block;
-        }
-        
+
+
+
         .card {
             border: none;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
         }
-        
+
         .card:hover {
             transform: translateY(-5px);
         }
-        
+
         .news-date {
             color: var(--primary-color);
             font-weight: 600;
         }
-        
+
         .event-card {
             border-left: 4px solid var(--primary-color);
         }
-        
+
         .twitter-feed {
             background-color: #f8f9fa;
             border-radius: 10px;
             padding: 20px;
         }
-        
+
         footer {
             background-color: var(--dark-color);
             color: white;
         }
-        
+
         .section-title {
             position: relative;
             padding-bottom: 15px;
             margin-bottom: 30px;
         }
-        
+
         .section-title:after {
             content: '';
             position: absolute;
@@ -116,23 +89,21 @@
             height: 3px;
             background-color: var(--primary-color);
         }
-        
+
         @media (max-width: 768px) {
             .hero-section {
                 padding: 80px 0;
             }
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f9fa;
             color: #333;
         }
-        
-        .navbar {
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
+
+
+
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
             background-size: cover;
@@ -140,7 +111,7 @@
             padding: 100px 0;
             color: white;
         }
-        
+
         .team-card {
             border: none;
             border-radius: 15px;
@@ -148,11 +119,11 @@
             transition: transform 0.3s ease;
             overflow: hidden;
         }
-        
+
         .team-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .profile-img-container {
             width: 180px;
             height: 180px;
@@ -164,31 +135,31 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
-        
+
         .profile-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: top;
         }
-        
+
         .social-links a {
             color: var(--primary-color);
             font-size: 1.2rem;
             margin-right: 15px;
             transition: color 0.3s;
         }
-        
+
         .social-links a:hover {
             color: var(--secondary-color);
         }
-        
+
         .section-title {
             position: relative;
             padding-bottom: 15px;
             margin-bottom: 30px;
         }
-        
+
         .section-title:after {
             content: '';
             position: absolute;
@@ -198,12 +169,12 @@
             height: 3px;
             background-color: var(--primary-color);
         }
-        
+
         footer {
             background-color: var(--dark-color);
             color: white;
         }
-        
+
         .modal-profile-img {
             width: 120px;
             height: 120px;
@@ -215,13 +186,14 @@
             display: block;
         }
 
-  @keyframes fadeInPage {
-    to {
-      opacity: 1;
-    }
-  }
+        @keyframes fadeInPage {
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -237,36 +209,44 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown">
                             About Climate Concern
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="PPDdevelopment.html">PPD development</a></li>
-                            <li><a class="dropdown-item" href="localstakeholder.html">Local Stakeholder Consultation</a></li>
+                            <li><a class="dropdown-item" href="localstakeholder.html">Local Stakeholder Consultation</a>
+                            </li>
                             <li><a class="dropdown-item" href="independentlocal.html">Independent Local Auditor</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button"
+                            data-bs-toggle="dropdown">
                             Policy Advisory
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="policyreview.html">Policy Review</a></li>
-                            <li><a class="dropdown-item" href="developmentnationalteam.html">Development of National Scheme</a></li>
+                            <li><a class="dropdown-item" href="developmentnationalteam.html">Development of National
+                                    Scheme</a></li>
 
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button"
+                            data-bs-toggle="dropdown">
                             Resources
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="carbonmarketproject.html">Carbon Market Project Development</a></li>
-                            <li><a class="dropdown-item" href="carbonamarketprojectmarketverification.html">Carbon Market Project Verification</a></li>
+                            <li><a class="dropdown-item" href="carbonmarketproject.html">Carbon Market Project
+                                    Development</a></li>
+                            <li><a class="dropdown-item" href="carbonamarketprojectmarketverification.html">Carbon
+                                    Market Project Verification</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button"
+                            data-bs-toggle="dropdown">
                             Who we are
                         </a>
                         <ul class="dropdown-menu">
@@ -279,7 +259,7 @@
                         <a class="nav-link" href="contactus.html">Contact us</a>
                     </li>
                 </ul>
-                <a href="#consultation" class="btn btn-light ms-lg-4">Consultation</a>
+                <a href="index.html#consultation" class="btn btn-light ms-lg-4">Consultation</a>
             </div>
         </div>
     </nav>
@@ -300,7 +280,7 @@
                     <p class="text-muted">Experienced professionals committed to environmental sustainability</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <!-- Member 1 -->
                 <div class="col-md-6 col-lg-4">
@@ -310,23 +290,26 @@
                                 <img src="./images/ntazindapp.jpg" class="profile-img">
                             </div>
                             <h5 class="card-title mt-3">Jean Ntazinda</h5>
-                            <p class="card-subtitle text-primary mb-2">Founder & Consultant
+                            <p class="card-subtitle text-primary mb-2">Lead Consultant, Climate Finance
+
                             </p>
-                            <p class="card-text">Environmental expert with 15+ years of experience in climate change and sustainable development.
-                                Skilled in project management, stakeholder engagement, and policy design.
-                                Worked with UNDP, GCF, World Bank, and other global climate initiatives</p>
+                            <p class="card-text">Mr. Ntazinda, founder of Climate Concern, has over 15 years’ experience
+                                in carbon markets and climate finance, designing major emission reduction projects and
+                                supporting Rwanda’s engagement with the Green Climate Fund. He also contributed to
+                                implementing Article 6 of the Paris Agreement across Africa.</p>
                             <div class="social-links mb-3">
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="#"><i class="fab fa-x-twitter"></i></a>
                                 <a href="mailto:amina@enviroserve.rw"><i class="fas fa-envelope"></i></a>
                             </div>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#member1Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#member1Modal">
                                 View Full Bio
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Member 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card team-card h-100">
@@ -335,21 +318,26 @@
                                 <img src="./images/Picture123.jpeg" class="profile-img">
                             </div>
                             <h5 class="card-title mt-3">Ms. Mary Alice Bamusiime</h5>
-                            <p class="card-subtitle text-primary mb-2">Consultant. Gender Specialist in Natural Resources and Agriculture                            </p>
-                            <p class="card-text">Expert in gender mainstreaming, women empowerment, and socio-economic assessments.
-                                Worked with USAID, UNDP, and REMA on policy, baseline studies, and rural development</p>
+                            <p class="card-subtitle text-primary mb-2">Lead Consultant, Gender & Environmental
+                                Safeguards
+                            </p>
+                            <p class="card-text">Ms. Alice Bamusiime has over 20 years of experience in gender
+                                mainstreaming across natural resources, agriculture, renewable energy, and policy
+                                development. She has worked with USAID programs and now consults widely on gender,
+                                environment, and rural development in Rwanda and beyond.</p>
                             <div class="social-links mb-3">
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="#"><i class="fab fa-x-twitter"></i></a>
                                 <a href="mailto:jeanpaul@enviroserve.rw"><i class="fas fa-envelope"></i></a>
                             </div>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#member2Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#member2Modal">
                                 View Full Bio
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Member 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card team-card h-100">
@@ -359,21 +347,25 @@
 
                             </div>
                             <h5 class="card-title mt-3">Peter Katanisa</h5>
-                            <p class="card-subtitle text-primary mb-2">Economist (Environment and Natural Resource Management Specialist).                            </p>
-                            <p class="card-text">Skilled in tourism development, public-private partnerships, and natural resource management.
-                                Has advised Rwanda’s environment sector and led research on NCA, conservation, and sustainable tourism</p>
+                            <p class="card-subtitle text-primary mb-2">Economist (Environment and Natural Resource
+                                Management Specialist). </p>
+                            <p class="card-text">Skilled in tourism development, public-private partnerships, and
+                                natural resource management.
+                                Has advised Rwanda’s environment sector and led research on NCA, conservation, and
+                                sustainable tourism</p>
                             <div class="social-links mb-3">
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="#"><i class="fab fa-x-twitter"></i></a>
                                 <a href="mailto:marieclaire@enviroserve.rw"><i class="fas fa-envelope"></i></a>
                             </div>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#member3Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#member3Modal">
                                 View Full Bio
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Member 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card team-card h-100">
@@ -382,24 +374,28 @@
                                 <img src="./images/kiza.jpeg" class="profile-img">
 
                             </div>
-                            <h5 class="card-title mt-3">Moses Kiiza</h5>
-                            <p class="card-subtitle text-primary mb-2">Legal Consultant
+                            <h5 class="card-title mt-3">Omer ELAWAD</h5>
+                            <p class="card-subtitle text-primary mb-2">Lead Consultant, Carbon Market
                             </p>
-                            <p class="card-text">Legal expert with 9+ years of experience specializing in public law and legislative drafting for infrastructure sectors.
-                                Highly skilled in drafting clear, precise laws in energy, transport, traffic, and environmental policy.
-                                Regularly engaged by Rwandan ministries for legal structuring and policy development</p>
+                            <p class="card-text">Omer is a climate finance and carbon markets specialist with over 18
+                                years of experience advancing environmental sustainability across Africa. He has worked
+                                with institutions such as the World Bank and REMA to operationalize Rwanda’s
+                                Standardized Crediting Framework and support Article 6 implementation, while also
+                                contributing to national, regional, and voluntary carbon market initiatives across
+                                multiple countries.</p>
                             <div class="social-links mb-3">
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="#"><i class="fab fa-x-twitter"></i></a>
-                                <a href="mailto:grace@enviroserve.rw"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:omerelawad@enviroserve.rw"><i class="fas fa-envelope"></i></a>
                             </div>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#member4Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#member4Modal">
                                 View Full Bio
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Member 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card team-card h-100">
@@ -409,22 +405,25 @@
 
                             </div>
                             <h5 class="card-title mt-3">Dominique Kayizire</h5>
-                            <p class="card-subtitle text-primary mb-2">Partner and Lead Natural Resources Consultant
+                            <p class="card-subtitle text-primary mb-2">Lead Consultant, Environmental Compliance
                             </p>
-                            <p class="card-text">Partner at Climate Concern Ltd and co-designer of EnviroFlag, promoting environmental compliance in business operations.
-                                Has worked with public, private, and intergovernmental bodies including RCS Global and Rwanda’s Ministry of Natural Resources</p>
+                            <p class="card-text">Dominique, an MSc graduate in Geo-Science for Environment and
+                                Sustainable Development, co-designed EnviroFlag under Climate Concern Ltd. With nine
+                                years in natural resources governance, he has led roles including Rwanda Country Manager
+                                at RCS Global Group and consultant for the former Ministry of Natural Resources</p>
                             <div class="social-links mb-3">
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="#"><i class="fab fa-x-twitter"></i></a>
                                 <a href="mailto:thomas@enviroserve.rw"><i class="fas fa-envelope"></i></a>
                             </div>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#member5Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#member5Modal">
                                 View Full Bio
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Member 6 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card team-card h-100">
@@ -432,18 +431,21 @@
                             <div class="profile-img-container">
                                 <img src="./images/jean.jpeg" class="profile-img">
                             </div>
-                            <h5 class="card-title mt-3">Jean Bosco Rwiyamirira</h5>
-                            <p class="card-subtitle text-primary mb-2">Entrepreneurship Consultant in Renewable Energy
+                            <h5 class="card-title mt-3">Dieudonné UMUGISHA</h5>
+                            <p class="card-subtitle text-primary mb-2">Managing Consultant
                             </p>
-                            <p class="card-text">Energy expert and entrepreneur with 10+ years of experience in energy project development and policy.
-                                Founder of RECO and consultant on clean cooking and household energy initiatives in Rwanda.
-                                Contributed to regional energy efforts including EACREEE and AU/AfDB energy programs 
+                            <p class="card-text">Umugisha Dieudonne, with over 10 years’ experience in research
+                                operations and project management, has led projects in climate action, clean energy,
+                                agriculture, health, and youth employment. Holding degrees in Electrical Engineering and
+                                Renewable Energy, he is PRINCE2 certified with expertise in climate finance, carbon
+                                taxation, and sustainability
                             <div class="social-links mb-3">
                                 <a href="#"><i class="fab fa-linkedin"></i></a>
                                 <a href="#"><i class="fab fa-x-twitter"></i></a>
                                 <a href="mailto:chantal@enviroserve.rw"><i class="fas fa-envelope"></i></a>
                             </div>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#member6Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#member6Modal">
                                 View Full Bio
                             </button>
                         </div>
@@ -459,20 +461,22 @@
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <h4 class="text-white mb-4">EnviroServe</h4>
-                    <p>Leading Rwanda's climate action through innovative solutions in carbon market development, policy advisory, and capacity building.</p>
+                    <p>Leading Rwanda's climate action through innovative solutions in carbon market development, policy
+                        advisory, and capacity building.</p>
                 </div>
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <h5 class="text-white mb-4">Contact Info</h5>
                     <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Kigali, Rwanda</p>
-                    <p class="mb-2"><i class="fas fa-phone me-2"></i> +250 788 123 456</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>(+250) 0788481439</p>
                     <p class="mb-0"><i class="fas fa-envelope me-2"></i> info@enviroserve.rw</p>
                 </div>
                 <div class="col-lg-4">
                     <h5 class="text-white mb-4">Follow Us</h5>
                     <div class="d-flex">
-                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-x-twitter fa-2x"></i></a>
-                        <a href="https://facebook.com/climateconcernrwanda" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" target="_blank" class="text-white me-3"><i class="fab fa-x-twitter fa-2x"></i></a>
+                        <a href="https://facebook.com/climateconcernrwanda" target="_blank" class="text-white"><i
+                                class="fab fa-facebook fa-2x"></i></a>
                     </div>
                 </div>
             </div>
@@ -494,12 +498,30 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
-                        <img src="./images/ntazindapp.jpg" class="modal-profile-img" >
+                        <img src="./images/ntazindapp.jpg" class="modal-profile-img">
                     </div>
                     <p><strong>Email:</strong> jeanntazinda@climateconcern.rw</p>
-                    <p><strong>Experience:</strong>Jean NTAZINDA holds a bachelor degree in geography with major in environmental planning from National University of Rwanda (ur.ac.rw), did graduate studies in International Development Administration at Andrews University-Michigan, USA (andrews.edu) and has post-graduate Climate Change Diplomacy from Diplo-Foundation-Malta (diplomacy.edu). He is career wise equipped with capacity in project design and management, stakeholders’ engagement, matching business development and government programs.
-                        Prior to starting Climate Concern Ltd in 2012, Jean NTAZINDA worked for Rwanda Environment Management Authority for 2.5 years as Project manager of a capacity building project for Clean Development Mechanism (CDM) under Kyoto Protocol. Before taking role of a country director for 2 years at delAgua.org in 2013, he participated in design and implementation of its UNFCCC registered CDM programme of activities (PoA) between May 2012-May 2013. From 2016 to date Jean spends his time on consulting work in environment related projects with much focus on climate change adaptation. In the most recent years, he worked on development Climate Change projects supported by GCF, UNDP, GEF and World Bank.  
-                        Jean NTAZINDA has a good understanding of legal framework and institutional arrangement of environment and climate change at national and international level.</p>
+                    <p><strong>Experience:</strong>With over fifteen years of experience in the carbon market and
+                        climate finance, Mr.
+                        NTAZINDA has played a key role in designing numerous emission reduction projects for both
+                        compliant and voluntary markets, which have generated millions of CERs and VERs. His expertise
+                        also extends to supporting the Rwanda National Country Programme and Framework for National
+                        Engagement with the Green Climate Fund.
+
+                        Furthermore, he contributed to the development of the Standardised Crediting Framework, piloted
+                        by the World Bank in the Ci-Dev Countries, for the implementation of Article 6 of the Paris
+                        Agreement in Rwanda and other African nations. Before establishing Climate Concern in 2012, Mr.
+                        NTAZINDA was instrumental in setting up the Designated National Authority (DNA) Secretariat for
+                        the carbon market during his time at the Rwanda Environment Management Authority (REMA).
+
+                        Mr. NTAZINDA’s academic and professional journey has consistently focused on GHG mitigation and
+                        adaptation to the effects of climate change. He is currently engaged in several consulting
+                        assignments at the national and African regional levels, supporting the implementation of
+                        Article 6 of the Paris Agreement and the design of emission reduction projects.
+
+                        He holds a BSc in Geography with a focus on Environmental Planning from the National University
+                        of Rwanda and a MSc in International Development Administration with a specialization in Climate
+                        Change Resilience and Risk Management from Andrews University in Michigan, USA</p>
                     <div class="social-links text-center mt-4">
                         <a href="#"><i class="fab fa-linkedin fa-2x me-3"></i></a>
                         <a href="#"><i class="fab fa-x-twitter fa-2x me-3"></i></a>
@@ -513,7 +535,7 @@
         </div>
     </div>
 
-    
+
     <div class="modal fade" id="member2Modal" tabindex="-1" aria-labelledby="member2ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -523,14 +545,25 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
-                        <img src="./images/Picture123.jpeg" class="modal-profile-img" >
+                        <img src="./images/Picture123.jpeg" class="modal-profile-img">
                     </div>
                     <p><strong>Email:</strong> maryalice@climateconcern.rw</p>
-                    <p><strong>Experience:</strong>Ms. Bamusiime has more than 15 years of experience related to gender mainstreaming in natural resources and agriculture, gender based violence, renewable energy, gender mainstreaming of policies, projects and programs, conducting baselines and needs assessment studies, developing gender mainstreaming strategies as well as developing training modules and training on women empowerment.
+                    <p><strong>Experience:</strong>Ms. Alice Bamusiime, a highly experienced professional with over 20
+                        years of expertise in gender mainstreaming across various sectors, including natural resources,
+                        agriculture, renewable energy, and policy development. She has a strong background in conducting
+                        baseline studies, needs assessments, and developing gender mainstreaming strategies, as well as
+                        creating and delivering training modules on women’s empowerment.
 
-                        Alice has worked with USAID/Land O’ lakes Program on the Rwanda Dairy Competitiveness Program II charged with ensuring that gender is integrated in all project activities with particular focus on female empowerment and Cooperative/ farmers organizations development, champion in Environmental compliance. Since then Alice has been a consultant mainly in the area of gender mainstreaming in natural resources and environmental conservation, as well as rural development and agriculture.
-                        
-                        Most recently, she has also participated in the UNDP and REMA baseline Surveys on landscape restoration in Mayaga as a gender and socio-economic expert in charge of five (5) baselines; socio-economic, gender analysis and gender action Plan, Stakeholders analysis and Sustainable land management and sustainable forest management. Alice has Masters of Development Gender and Rural development and BA in social Sciences Gender and development from Makerere University, Kampala, Uganda. Ms. Bamusiime is fluent in English, Kinyarwanda, Kiswahili as well as basic working knowledge of French.</p>
+                        Alice previously worked with the USAID/Land O’Lakes Program on the Rwanda Dairy Competitiveness
+                        Program II, where she was responsible for integrating gender into all project activities, with a
+                        focus on female empowerment and cooperative/farmers’ organization development. She also
+                        championed environmental compliance. Since then, Alice has primarily worked as a consultant,
+                        specializing in gender mainstreaming within natural resources, environmental conservation, rural
+                        development, and agriculture.
+
+                        Alice holds a Master’s degree in Development Gender and Rural Development and a Bachelor’s
+                        degree in Social Sciences Gender and Development from Makerere University, Kampala, Uganda. She
+                        is fluent in English, Kinyarwanda, and Kiswahili, with a basic working knowledge of French</p>
                     <div class="social-links text-center mt-4">
                         <a href="#"><i class="fab fa-linkedin fa-2x me-3"></i></a>
                         <a href="#"><i class="fab fa-x-twitter fa-2x me-3"></i></a>
@@ -544,7 +577,7 @@
         </div>
     </div>
 
-    
+
     <div class="modal fade" id="member3Modal" tabindex="-1" aria-labelledby="member3ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -554,14 +587,27 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
-                        <img src="./images/Picture2.jpeg" class="modal-profile-img" >
+                        <img src="./images/Picture2.jpeg" class="modal-profile-img">
                     </div>
                     <p><strong>Email:</strong>peterkatanisa@climateconcern.rw</p>
-                    <p><strong>Experience:</strong>Mr. Katanisa has nine years of experience related to environment and climate change, land, forests, water resources policy and strategies development, implementation, monitoring and evaluation. In addition, he has significant experience in national tourism development, Public Private Partnership, Development Project Management and Finance Management
+                    <p><strong>Experience:</strong>Mr. Katanisa has nine years of experience related to environment and
+                        climate change, land, forests, water resources policy and strategies development,
+                        implementation, monitoring and evaluation. In addition, he has significant experience in
+                        national tourism development, Public Private Partnership, Development Project Management and
+                        Finance Management
 
-                        Mr. Katanisa has provided advisory, technical assistance/consulting services to the Ministry of Environment and Ministry of Natural Resources to ensure effective functioning and coordination of Rwanda’s Environment and Natural Resource Sector.
-                        
-                        He has lead Conservation and Tourism product development while working in Rwanda’s Tourism Research and Development. Mr. Katanisa has conducted environment and natural resources research, analysis and delivered presentations on the role of environment, natural resources, Natural Capital Accounting (NCA) and tourism in country development. He has a Post Graduate Diploma in Project Management; a bachelor’s degree in economics sciences; a certificate in Strategic Environment Assessment (SEA), a certificate in project finance appraisal, a Certificate in Hospitality Management and; Certificate in Community-based Tourism. Mr. Katanisa is fluent in English, French and Kinyarwanda.</p>
+                        Mr. Katanisa has provided advisory, technical assistance/consulting services to the Ministry of
+                        Environment and Ministry of Natural Resources to ensure effective functioning and coordination
+                        of Rwanda’s Environment and Natural Resource Sector.
+
+                        He has lead Conservation and Tourism product development while working in Rwanda’s Tourism
+                        Research and Development. Mr. Katanisa has conducted environment and natural resources research,
+                        analysis and delivered presentations on the role of environment, natural resources, Natural
+                        Capital Accounting (NCA) and tourism in country development. He has a Post Graduate Diploma in
+                        Project Management; a bachelor’s degree in economics sciences; a certificate in Strategic
+                        Environment Assessment (SEA), a certificate in project finance appraisal, a Certificate in
+                        Hospitality Management and; Certificate in Community-based Tourism. Mr. Katanisa is fluent in
+                        English, French and Kinyarwanda.</p>
                     <div class="social-links text-center mt-4">
                         <a href="#"><i class="fab fa-linkedin fa-2x me-3"></i></a>
                         <a href="#"><i class="fab fa-x-twitter fa-2x me-3"></i></a>
@@ -575,20 +621,48 @@
         </div>
     </div>
 
-    
+
     <div class="modal fade" id="member4Modal" tabindex="-1" aria-labelledby="member4ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="member4ModalLabel">Moses Kiiza</h5>
+                    <h5 class="modal-title" id="member4ModalLabel">Omer ELAWAD</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
                         <img src="./images/kiza.jpeg" class="modal-profile-img">
                     </div>
-                    <p><strong>Email:</strong> moseskiiza@climateconcern.rw</p>
-                    <p><strong>Experience:</strong>Amos KIIZA has a specialization in public law. I am a qualified and experienced legislative drafter and my clients are mainly public institutions. I share a belief with Napoleon Bonaparte that a law should be clear, precise, and unambiguous and interpreting it means allowing distortions. In the same vein, A sentence should contain no unnecessary words, and a paragraph no unnecessary sentences, for the same reason that a machine should have no unnecessary parts (William Strunk). My knowledge on Rwandan legal framework, infrastructure policies and laws and the ability to draft well have put me in limelight that most of Institutions request me to draft for them or assist their drafters to structure well the Bills of law. I have a working experience of over 9 years in infrastructure projects and laws mainly energy, transport and environment with a focus on traffic laws and environmental laws. I have worked with various public institutions especially Ministries in drafting many infrastructure policies and laws.
+                    <p><strong>Email:</strong> omerelawad@climateconcern.rw</p>
+                    <p><strong>Experience:</strong>Omer is a climate finance and carbon markets specialist with 18+
+                        years of experience advancing environmental sustainability across Africa. He recently served as
+                        a World Bank Consultant (STC) to the Rwanda Environment Management Agency (REMA), spearheading
+                        the operationalization of Rwanda’s Standardized Crediting Framework (SCF) and to advance the
+                        country’s Article 6 engagement under the Paris Agreement.
+
+                        He provided technical leadership in upgrading Rwanda’s national registry system for A6
+                        compliance, developed the SCF Operations Manual, and facilitated Technical Committee (TC) and
+                        Governance Board (GB) meetings to review/approve energy access methodologies (including clean
+                        cooking, LPG, mini-grids, and solar systems), protocols, and MRV templates. His work ensured
+                        end-to-end SCF functionality—from program listings and issuance requests to institutional
+                        governance—while delivering targeted capacity building for REMA’s team on carbon crediting and
+                        A6 transactions.
+
+                        As a UNFCCC registered Roster of Experts (ROE) reviewer for GHG inventories and BURs, Omer
+                        possesses deep technical credentials in climate policy implementation. He participated as team
+                        member to the Sudan’s NDCs and Third National Communication, leading IPPU sector analysis and
+                        mitigation strategies, and led Sudan’s first Gold Standard-certified carbon project
+                        (fuel-efficient stoves), generating VERs for voluntary markets. His expertise spans compliance
+                        and voluntary mechanisms, including advising the Eastern Africa Alliance on Carbon Markets and
+                        Climate Finance (EAA) on Article 6 implementation and representing Sudan in regional carbon
+                        market dialogues.
+
+                        Omer’s cross-cutting experience includes managing corporate GHG protocols (Haggar Group),
+                        leading GCF readiness programs, designing REDD+ frameworks, and mobilizing private climate
+                        investments. A Certified Sustainability/CSR Practitioner (CSE) and Chartered Management
+                        Institute (CMI UK) member, he has secured funding from World Bank, GCF, and Ci-Dev for projects
+                        in 10+ countries, consistently bridging policy, finance, and field implementation to scale
+                        climate action.
                     </p>
                     <div class="social-links text-center mt-4">
                         <a href="#"><i class="fab fa-linkedin fa-2x me-3"></i></a>
@@ -603,7 +677,7 @@
         </div>
     </div>
 
-    
+
     <div class="modal fade" id="member5Modal" tabindex="-1" aria-labelledby="member5ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -616,7 +690,18 @@
                         <img src="./images/Picture1.jpeg" class="modal-profile-img">
                     </div>
                     <p><strong>Email:</strong> dominiquekiyigire@climateconcern.rw</p>
-                    <p><strong>Experience:</strong>Dominique KAYIGIRE is a partner and Natural Resources consultant at Climate Concern Ltd. He holds an MSc in Geo-Science for Environment and Sustainable Development from the University of Rwanda. Dominique is a co-designer of EnviroFlag, a Climate Concern Ltd program that supports projects and businesses to comply with their environmental commitments in the course of their operations. Before devoting his full time to EnviroFlag and Climate Concern Ltd, Dominique occupied a number of positions in the sphere of natural resources governance in public, private and intergovernmental institutions for the past nine years. He served as the Rwanda Country Manager at RCS Global Group, an internationally credited in the audits of supply chains linking minerals, metal producers and refiners. Rwandan registered and practicing environmental consultant, Dominique worked as the Coordinator of mineral certification in then Rwanda Ministry of Natural Resources. With funds mostly from the EU and USAID, he technically contributed much at policy-making level for the introduction of the Regional Certification Mechanism for minerals in many of the 12 ICGLR member states.</p>
+                    <p><strong>Experience:</strong>Dominique holds an MSc in Geo-Science for Environment and Sustainable
+                        Development from the University of Rwanda. He is also a co-designer of EnviroFlag, a Climate
+                        Concern Ltd program dedicated to helping projects and businesses meet their environmental
+                        commitments during operations.
+
+                        Before dedicating his full time to EnviroFlag and Climate Concern Ltd, Dominique spent nine
+                        years in various natural resources governance roles within public, private, and
+                        intergovernmental institutions. His experience includes serving as the Rwanda Country Manager at
+                        RCS Global Group, an internationally recognized firm specializing in supply chain audits for
+                        mineral and metal producers and refiners. As a registered and practicing environmental
+                        consultant in Rwanda, Dominique also coordinated mineral certification at the former Rwanda
+                        Ministry of Natural Resources.</p>
                     <div class="social-links text-center mt-4">
                         <a href="#"><i class="fab fa-linkedin fa-2x me-3"></i></a>
                         <a href="#"><i class="fab fa-x-twitter fa-2x me-3"></i></a>
@@ -630,20 +715,31 @@
         </div>
     </div>
 
-    
+
     <div class="modal fade" id="member6Modal" tabindex="-1" aria-labelledby="member6ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="member6ModalLabel">Jean Bosco Rwiyamirira </h5>
+                    <h5 class="modal-title" id="member6ModalLabel">Umugisha Dieudonné </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
                         <img src="./images/jean.jpeg" class="modal-profile-img">
                     </div>
-                    <p><strong>Email:</strong> jeanboscorwiyamira@climateconcern.rw</p>
-                    <p><strong>Experience:</strong>Mr. RWIYAMIRIRA has a University Degree in Financial and Administrative Management; Entrepreneurship Option. He has a Diploma in Business Management. He has a certificate in National IWRM (Integrated Water Resource Management). Mr. Jean Bosco RWIYAMIRIRA is an Entrepreneur in energy sector as the Founder and Managing Director of RECO (Rwanda Energy Development Company) and a Business Manager. As a consultant (Household Energy Expert /Sustainable Development Auditor for ICSs projects), he has delivered reports on various ICSs projects in Rwanda including: the Africa Biomass Energy Conservation (Rwanda Biomass Conservation) African Cook stoves and water program, Improved Kitchen Regime multi-County PoA(program of activities). He has also delivered a Baseline Study on Household Energy in the Mayaga region in Rwanda. At national level, he has 10 years of experience related to energy projects development as energy private developer and in energy policy and strategies development. A regional level, he successfully participated as a contributor and reviewer in the EAC Renewable Energy & Energy Efficiency Status Report 2016– Expert Peer Review, he participated in the all process of setting up of the EACREEE (East African Centre of Excellence for Renewable Energy and Efficiency). He is an observer in the African union Commission energy meetings and Africa development bank annual meetings.</p>
+                    <p><strong>Email:</strong> umugishadieudonne@climateconcern.rw</p>
+                    <p><strong>Experience:</strong>Umugisha Dieudonne is a seasoned professional with over 10 years of
+                        experience in research operations and project management. He has led diverse field research
+                        projects across sectors such as climate action, clean energy, agriculture, health, education,
+                        and youth employment. Umugisha holds a BSc in Electrical and Electronics Engineering from the
+                        University of Rwanda and Master’s in Renewable Energy from the same University.
+
+                        He is PRINCE2 certified and has earned multiple specialized certifications in climate finance,
+                        carbon taxation, research ethics, and sustainability from leading institutions, including the
+                        United Nations Institute for Training and Research as well as the World Bank. Passionate about
+                        climate adaptation and sustainable development, Umugisha combines technical expertise with
+                        strong leadership to drive impactful projects. Outside of work, he enjoys basketball, traveling,
+                        and reading.</p>
                     <div class="social-links text-center mt-4">
                         <a href="#"><i class="fab fa-linkedin fa-2x me-3"></i></a>
                         <a href="#"><i class="fab fa-x-twitter fa-2x me-3"></i></a>
@@ -657,7 +753,8 @@
         </div>
     </div>
 
-        <!-- Bootstrap 5 JS -->
+    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
