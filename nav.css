@@ -241,3 +241,7 @@ opacity: 1;
 .navbar-dark .navbar-brand {
     color: #2c9c5b !important;
 }
+
+.card-text{
+    text-align: justify;
+}
